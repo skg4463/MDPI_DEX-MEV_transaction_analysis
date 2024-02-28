@@ -6,8 +6,11 @@ Figure. Data collection and analysis process for DEX analysis.
 
 Files:
 data-*   : Data used for analysis
+
 dataEX-* : Extraction means to obtain data
+
 grpdrw-* : Drawing graphs through data
+
 
 dataEX   : Etherscan.io Transaction Extractor
            Etherscan API
