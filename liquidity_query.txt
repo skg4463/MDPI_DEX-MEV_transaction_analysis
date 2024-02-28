@@ -1,0 +1,29 @@
+SELECT
+    block_number,
+    category,
+    contract_address,
+    contract_version,
+    exchange_name,
+    liquidity,
+    liquidity_delta,
+    pool_balance,
+    quantity,
+    sender_address,
+    tick_lower,
+    tick_upper,
+    TIMESTAMP,
+    transaction_hash
+FROM
+    ethereum.dex_liquidity
+WHERE
+    exchange_name = 'uniswap'
+    AND position_id IS NOT NULL
+    AND TIMESTAMP >= '2023-01-16T00:00:00Z'
+    AND TIMESTAMP < '2023-01-16T01:00:00Z'
+    AND contract_address = '0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640'
+ORDER BY
+    TIMESTAMP ASC,
+    block_number DESC,
+    log_index DESC
+LIMIT
+    100;
