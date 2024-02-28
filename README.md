@@ -5,6 +5,7 @@ Nakhoon Choi, Heeyoul Kim
 Figure. Data collection and analysis process for DEX analysis.
 
 Files:
+
 data-*   : Data used for analysis
 
 dataEX-* : Extraction means to obtain data
