@@ -4,8 +4,8 @@ import matplotlib.dates as mdates
 
 # CSV 파일 읽기
 df = pd.read_csv('uniswap_data.csv', parse_dates=['timestamp'])
-df_price = pd.read_csv('ethereum_price.csv', parse_dates=['timestamp'])
-df_trades = pd.read_csv('bot_trading_volume.csv', parse_dates=['time'])
+df_price = pd.read_csv('data-ethereum_price.csv', parse_dates=['timestamp'])
+df_trades = pd.read_csv('data-bot_trading_volume.csv', parse_dates=['time'])
 
 # 'liquidity_delta'를 실수로 변환
 df['liquidity_delta'] = pd.to_numeric(df['liquidity_delta'], errors='coerce')

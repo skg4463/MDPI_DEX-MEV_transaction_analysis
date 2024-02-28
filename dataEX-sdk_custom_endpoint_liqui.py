@@ -3,12 +3,12 @@ import csv
 from datetime import datetime, timedelta
 import time
 import logging
+# M3POVCPgTamflczQHxcqlhBlX6ciBBvg
 
 """
 transpose.io 를 통한 SQL query code
 custom endpoint = https://api.transpose.io/endpoint/dex_liquidity_by_account?end_date={end_date}&start_date={start_date}
-api key = M3POVCPgTamflczQHxcqlhBlX6ciBBvg
-
+api key = YOUR_OWN_APIKEY_in Transpose.io
 """
 
 # 로깅 설정: 터미널에 로그 출력
@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def fetch_data(start_date, end_date):
     headers = {
-        'X-API-KEY': 'M3POVCPgTamflczQHxcqlhBlX6ciBBvg',
+        'X-API-KEY': 'YOUR_OWN_APIKEY_inTranspose.io',
         'Content-Type': 'application/json',
     }
 

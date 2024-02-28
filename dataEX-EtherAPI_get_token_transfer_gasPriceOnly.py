@@ -3,14 +3,15 @@ import time
 import csv
 from datetime import datetime
 import pandas as pd
+# SAWPUXJA5CHHQA9M5MD9Z2MVT31QHVCZHE
 
 # Etherscan API 설정
-API_KEY = 'SAWPUXJA5CHHQA9M5MD9Z2MVT31QHVCZHE'
+API_KEY = 'YOUR_OWN_APIKEY'
 BASE_URL = 'https://api.etherscan.io/api'
-CONTRACT_ADDRESS = '0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640'
+CONTRACT_ADDRESS = '0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640' # USDC3
 
 # CSV 파일 설정
-AGGREGATED_CSV_FILE = 'aggregated_gas_prices1.csv'
+AGGREGATED_CSV_FILE = 'data-aggregated_gas_prices1.csv'
 
 # 타임스탬프를 일반 시간으로 변환하는 함수
 def convert_timestamp(hex_timestamp):

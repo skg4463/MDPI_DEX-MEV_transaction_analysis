@@ -7,7 +7,7 @@ from transpose.src.util.errors import TransposeRateLimit
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Transpose 객체 초기화
-api = Transpose(api_key='M3POVCPgTamflczQHxcqlhBlX6ciBBvg', debug=True)
+api = Transpose(api_key='YOUR_API_KEY', debug=True)
 
 
 def fetch_swaps():
@@ -15,7 +15,7 @@ def fetch_swaps():
     try:
         time.sleep(1)
         logging.debug("Starting API call to fetch swaps")
-        swaps = api.token.swaps_by_contract_address(
+        swaps = api.token.swaps_by_contract_address( # USDC3 - WETH
             contract_address='0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
             direction="all",
             occurred_after='2023-01-16T00:00:00',
