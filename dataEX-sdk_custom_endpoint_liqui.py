@@ -62,7 +62,7 @@ start_date = datetime(2023, 1, 1)
 end_date = start_date + timedelta(hours=48)  # 시간 간격
 
 # 파일 이름 설정
-filename = 'uniswap_data_22-23.csv'
+filename = 'data-(from-trans)_uniswap_data_22.01-23.12.csv'
 
 # 48시간 간격으로 데이터 요청 및 저장
 while end_date <= datetime(2023, 12, 31):

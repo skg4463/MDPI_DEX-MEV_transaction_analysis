@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
+# call the data ''
+
 # 날짜 파싱 및 데이터 전처리
 df['time'] = pd.to_datetime(df['time'])
 df['bot_trades'] = df['number_of_trades'] * df['percent_trades']

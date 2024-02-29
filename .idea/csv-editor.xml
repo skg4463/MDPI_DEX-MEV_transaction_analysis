@@ -52,6 +52,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data-DEX trading volume.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data-aggregated_gas_prices.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data-bot_trading_volume.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\ethereum_price.csv">
           <value>
             <Attribute>

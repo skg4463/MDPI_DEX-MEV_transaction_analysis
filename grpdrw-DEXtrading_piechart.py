@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 top_5 = dex_data.nlargest(5, '')
 others = dex_data[5:].sum()
 others['Project'] = 'Others'
